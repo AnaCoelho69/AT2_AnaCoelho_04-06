@@ -1,1 +1,21 @@
+   
+    real temperaturas[3][4]
+    cadeia cidades[3]
+    inteiro dias[4]={1,2,3,4}
 
+    para(inteiro i = 0; i<3; i++){
+      escreva("--- Nome da cidade ",i + 1,": ")
+      leia(cidades[i])
+    }
+    limpa()
+
+    para(inteiro l = 0; l<3; l++){
+      para(inteiro c = 0; c<4; c++){
+        escreva("--- Temperatura do dia ",dias[c]," da cidade ",cidades[l],": ")
+        leia(temperaturas[l][c])
+      }
+      limpa()
+    }
+    escreva("---------TEMPERATURAS REGISTRADAS---------\n--- Cidade ",cidades[0]," -- Dia 1: ",temperaturas[0][0]," -- Dia 2: ",temperaturas[0][1]," -- Dia 3: ",temperaturas[0][2]," -- Dia 4: ",temperaturas[0][3])
+    escreva("\n--- Cidade ",cidades[1]," -- Dia 1: ",temperaturas[1][0]," -- Dia 2: ",temperaturas[1][1]," -- Dia 3: ",temperaturas[1][2]," -- Dia 4: ",temperaturas[1][3])
+    escreva("\n--- Cidade ",cidades[2]," -- Dia 1: ",temperaturas[2][0]," -- Dia 2: ",temperaturas[2][1]," -- Dia 3: ",temperaturas[2][2]," -- Dia 4: ",temperaturas[2][3])
