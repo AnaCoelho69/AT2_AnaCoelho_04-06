@@ -1,0 +1,15 @@
+   
+    real nota[5]
+    cadeia nomealuno[5]
+
+    para(inteiro i = 0; i<=4; i++){
+      escreva("---Digite o nome do aluno: ")
+      leia(nomealuno[i])
+      escreva("---Digite a nota do aluno: ")
+      leia(nota[i])
+      limpa()
+    }
+    escreva("--- NOMES E NOTAS ---\n")
+    para(inteiro i = 0; i<=4; i++){
+      escreva("--Aluno: ",nomealuno[i]," | --Nota: ",nota[i],"\n")
+    }
