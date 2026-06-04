@@ -1,1 +1,40 @@
+  
+    real nota[10], maiornota = 0, menornota = 0, media = 0
+    cadeia aluno[10], turma, maiorn, menorn
+    inteiro marredondada = 0
+    
+    escreva("--- TURMA: ")
+    leia(turma)
+    limpa()
+    
+    escreva("--Aluno: ")
+    leia(aluno[0])
+    escreva("--Nota: ")
+    leia(nota[0])
+    media = media + nota[0]
+    maiornota = nota[0]
+    maiorn = aluno[0]
+    menornota = nota[0]
+    menorn = aluno[0]
+    limpa()
+
+    para(inteiro i = 1; i<=9; i++){
+      escreva("--Aluno: ")
+      leia(aluno[i])
+      escreva("--Nota: ")
+      leia(nota[i])
+      media = media + nota[i]
+      se(nota[i]>maiornota){
+        maiornota = nota[i]
+        maiorn = aluno[i]
+      }senao se(nota[i]<menornota){
+        menornota = nota[i]
+        menorn = aluno[i]
+      }
+      limpa()
+    }
+    media = media/10
+    marredondada = marredondada + media
+    escreva("--- MÉDIA DE NOTAS (ARREDONDADA) DA TURMA ",turma,": ",marredondada,"\n--- MAIOR NOTA -> Aluno: ",maiorn," Nota: ",maiornota,"\n--- MENOR NOTA -> Aluno: ",menorn," Nota: ",menornota)
+    
 
