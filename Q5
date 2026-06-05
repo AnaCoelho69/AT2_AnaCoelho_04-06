@@ -1,1 +1,15 @@
+ inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    real n, elev, arr, raiz
 
+    escreva("Digite um número: ")
+    leia(n)
+
+    arr = mat.arredondar(n,1)
+    raiz = mat.raiz(n,2)
+    elev = mat.potencia(n,2)
+
+    escreva("\nO número arredondado é ",arr,", a raiz quadrada do número é ",raiz," e o número elevado ao quadrado é ",elev,"\n")
+
+  }
