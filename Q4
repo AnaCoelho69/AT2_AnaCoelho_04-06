@@ -1,1 +1,17 @@
+  
+    real nota1,nota2,media
+
+    escreva("Digite a primeira nota: ")
+    leia(nota1)
+    escreva("Digite a segunda nota: ")
+    leia(nota2)
+    media = calcularMedia(nota1,nota2)
+    escreva("\nO resultado da média dos valores é ",media,"\n")
+    
+  }
+  funcao real calcularMedia(real nota1, real nota2){
+    real calculo
+    calculo = (nota1 + nota2)/2
+    retorne calculo
+  }
 
